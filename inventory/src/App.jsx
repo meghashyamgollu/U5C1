@@ -2,6 +2,7 @@ import { Books } from './components/Counter';
 import { Pens } from './components/Counter';
 import { Notebooks } from './components/Counter';
 import { Inkpens } from './components/Counter';
+// import { Total } from './components/Counter';
 import './App.css';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
   let pens = 10;
   let notebooks = 44;
   let inkpens = 78;
+  let total = books + pens + notebooks + inkpens;
   return (
     <div className="App">
       Inventory
@@ -24,6 +26,7 @@ function App() {
       <div className='items'>
         <Inkpens value= {inkpens}/>
       </div>
+      <div className='total'>{total}</div>
     </div>
   );
 }
